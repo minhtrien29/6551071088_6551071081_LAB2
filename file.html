@@ -1,0 +1,1486 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTOMIZE - Premium Auto Parts & Services</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+        @theme {
+            --font-orbitron: 'Orbitron', sans-serif;
+            --font-inter: 'Inter', sans-serif;
+            --color-tech-bg: #0B0E14;
+            --color-tech-card: #151A23;
+            --color-tech-red: #E31E24;
+            --color-tech-yellow: #F4D03F;
+        }
+    </style>
+
+    <link rel="stylesheet" href="file.css">
+</head>
+<body class="bg-tech-bg text-gray-200 font-inter antialiased">
+
+    <header class="fixed w-full z-50 transition-all duration-300 bg-gradient-to-b from-black/90 to-transparent">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center gap-x-6">
+            <div class="text-2xl font-bold tracking-widest uppercase flex-shrink-0 flex items-center">
+                <button id="mobile-menu-btn" class="text-white mr-4 md:hidden cursor-pointer hover:text-tech-red">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+                <a href="#" class="text-3xl font-orbitron font-black text-white italic tracking-wider">
+                    <span class="text-tech-red">=</span> AUTOMIZE
+                </a>
+            </div>
+            
+            <div class="hidden md:flex flex-grow items-center bg-white rounded-full h-10 md:h-12 shadow-lg mx-auto max-w-2xl px-1">
+                <div class="h-full flex items-center border-r border-gray-300 my-auto">
+                    <button class="flex items-center gap-2 px-4 h-full text-gray-900 font-orbitron font-bold text-[10px] md:text-xs uppercase hover:text-tech-red transition whitespace-nowrap cursor-pointer">
+                        ALL CATEGORIES 
+                        <i class="fa-solid fa-chevron-down text-gray-400 text-[8px] ml-1"></i>
+                    </button>
+                </div>
+                <input type="text" placeholder="ENTER YOUR KEYWORD" class="flex-grow px-4 bg-transparent text-gray-600 font-orbitron text-[10px] md:text-xs placeholder-gray-400 font-bold focus:outline-none uppercase tracking-wide h-full">
+                <button class="w-8 h-8 md:w-10 md:h-10 flex-shrink-0 flex items-center justify-center text-black hover:text-tech-red transition transform hover:scale-110 cursor-pointer rounded-full mr-1">
+                    <i class="fa-solid fa-magnifying-glass text-sm md:text-base"></i>
+                </button>
+            </div>
+
+            <div class="flex items-center space-x-6 text-white">
+                <a href="#" class="flex items-center gap-2 hover:text-tech-red transition group">
+                    <i class="fa-regular fa-user text-lg"></i>
+                    <div class="hidden lg:block text-left leading-tight">
+                        <span class="block text-[10px] font-bold text-gray-400 group-hover:text-tech-red">Account</span>
+                        <span class="block text-xs font-bold">Hello, Login</span>
+                    </div>
+                </a>
+                <a href="#" class="relative hover:text-tech-red transition">
+                    <i class="fa-regular fa-heart text-xl"></i>
+                    <span class="absolute -top-1 -right-2 bg-tech-red text-white text-[9px] font-bold w-4 h-4 flex items-center justify-center rounded-full">0</span>
+                </a>
+                <a href="#" class="relative hover:text-tech-red transition">
+                    <i class="fa-solid fa-cart-shopping text-xl"></i>
+                    <span class="absolute -top-1 -right-2 bg-tech-red text-white text-[9px] font-bold w-4 h-4 flex items-center justify-center rounded-full">2</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-4 flex justify-center items-center">
+            <nav id="main-nav" class="hidden md:flex space-x-10 font-orbitron text-sm uppercase font-bold tracking-wide py-2">
+                <a href="#" class="text-tech-red hover:text-white transition">HOME</a>
+                <a href="#" class="hover:text-tech-red transition">SHOP</a>
+                <a href="#" class="hover:text-tech-red transition">PRODUCT</a>
+                <a href="#" class="hover:text-tech-red transition">PAGES</a>
+                <a href="#" class="hover:text-tech-red transition">BLOG</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="relative overflow-hidden h-screen max-h-[700px] group bg-black">
+        <div id="banner-track" class="flex transition-transform duration-700 ease-in-out h-full w-full">
+            
+            <div class="w-full flex-shrink-0 relative h-full">
+                <img src="Images/Xe1.jpg" class="absolute inset-0 w-full h-full object-cover object-center z-0" alt="Slide 1">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent z-10"></div>
+                <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-transparent to-transparent z-10"></div>
+                <div class="absolute inset-0 container mx-auto px-4 flex items-center justify-start z-20 pb-20">
+                    <div class="max-w-2xl pl-4 md:pl-0 text-left">
+                        <span class="text-white font-orbitron uppercase tracking-[0.2em] text-xs border-l-4 border-tech-red pl-3 mb-3 block animate-fade-in-up drop-shadow-md">SPORT EDITION</span>
+                        <h1 class="text-4xl md:text-6xl font-orbitron font-black text-white mb-6 leading-tight uppercase italic drop-shadow-lg">
+                            New Arrivals <br> <span class="text-tech-red">SPORT RIM CAR</span>
+                        </h1>
+                        <a href="#" class="bg-white text-black font-orbitron font-bold py-3 px-10 rounded-full hover:bg-tech-red hover:text-white transition transform hover:scale-105 inline-flex items-center group shadow-lg">
+                            LEARN MORE <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full flex-shrink-0 relative h-full">
+                <img src="Images/xe3.jpg" class="absolute inset-0 w-full h-full object-cover object-center z-0" alt="Slide 2">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent z-10"></div>
+                <div class="absolute inset-0 bg-black/20 z-10"></div> <div class="absolute inset-0 container mx-auto px-4 flex flex-col items-center justify-center text-center z-20 pb-20">
+                    <div class="max-w-3xl mx-auto">
+                        <span class="text-white font-orbitron uppercase tracking-widest text-[10px] md:text-xs font-bold mb-3 block opacity-90 drop-shadow-md">
+                            TIRE REPLACEMENT SERVICE
+                        </span>
+                        <h1 class="text-3xl md:text-4xl font-orbitron font-bold text-white mb-4 uppercase tracking-wide drop-shadow-lg">
+                            EXPLORE MICHELIN TIRES <br> 
+                            <span class="text-tech-red">FOR YOUR VEHICLE</span>
+                        </h1>
+                        <a href="#" class="bg-white text-black font-orbitron font-bold py-2 px-8 rounded-full text-xs hover:bg-tech-red hover:text-white transition transform hover:scale-105 inline-flex items-center shadow-lg mt-2">
+                            LEARN MORE
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full flex-shrink-0 relative h-full">
+                <img src="Images/xe2.jpg" class="absolute inset-0 w-full h-full object-cover object-center z-0" alt="Slide 3">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent z-10"></div>
+                <div class="absolute inset-0 bg-black/20 z-10"></div>
+                
+                <div class="absolute inset-0 container mx-auto px-4 flex flex-col items-center justify-center text-center z-20 pb-20">
+                    <div class="max-w-3xl mx-auto">
+                        <span class="text-white font-orbitron uppercase tracking-widest text-[10px] md:text-xs font-bold mb-3 block opacity-90 drop-shadow-md">
+                            PREMIUM WHEELS
+                        </span>
+                        <h1 class="text-3xl md:text-4xl font-orbitron font-bold text-white mb-4 uppercase tracking-wide drop-shadow-lg">
+                            THE BEST AUTO SERVICE <br> 
+                            <span class="text-tech-red">FOR YOUR VEHICLE</span>
+                        </h1>
+                        <a href="#" class="bg-white text-black font-orbitron font-bold py-2 px-8 rounded-full text-xs hover:bg-tech-red hover:text-white transition transform hover:scale-105 inline-flex items-center shadow-lg mt-2">
+                            LEARN MORE
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <button id="prev-btn" class="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 hover:bg-white text-white hover:text-black rounded-full flex items-center justify-center transition duration-300 shadow-lg cursor-pointer z-30 opacity-0 group-hover:opacity-100 translate-x-[-20px] group-hover:translate-x-0">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button id="next-btn" class="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 hover:bg-white text-white hover:text-black rounded-full flex items-center justify-center transition duration-300 shadow-lg cursor-pointer z-30 opacity-0 group-hover:opacity-100 translate-x-[20px] group-hover:translate-x-0">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <div class="absolute bottom-0 left-0 w-full z-30 py-6 border-t border-white/20 bg-transparent">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <div class="flex items-center gap-4 group cursor-pointer">
+                        <div class="w-12 h-12 rounded-full bg-tech-red flex items-center justify-center text-white text-xl flex-shrink-0 shadow-[0_0_15px_rgba(227,30,36,0.6)] group-hover:scale-110 transition duration-300">
+                            <i class="fa-solid fa-truck-fast"></i>
+                        </div>
+                        <div class="text-left drop-shadow-md"> <h4 class="text-tech-red font-bold uppercase text-xs md:text-sm mb-1 tracking-wider group-hover:text-white transition">FREE US DELIVERY</h4>
+                            <p class="text-gray-200 text-[10px] md:text-xs leading-tight opacity-90 font-medium">For US customers (including Alaska and Hawaii) or orders over $200</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4 group cursor-pointer">
+                        <div class="w-12 h-12 rounded-full bg-tech-red flex items-center justify-center text-white text-xl flex-shrink-0 shadow-[0_0_15px_rgba(227,30,36,0.6)] group-hover:scale-110 transition duration-300">
+                            <i class="fa-regular fa-credit-card"></i>
+                        </div>
+                        <div class="text-left drop-shadow-md">
+                            <h4 class="text-tech-red font-bold uppercase text-xs md:text-sm mb-1 tracking-wider group-hover:text-white transition">SECURE PAYMENT</h4>
+                            <p class="text-gray-200 text-[10px] md:text-xs leading-tight opacity-90 font-medium">We accept Visa, American Express, Paypal, Payoneer Mastercard and Discover</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4 group cursor-pointer">
+                        <div class="w-12 h-12 rounded-full bg-tech-red flex items-center justify-center text-white text-xl flex-shrink-0 shadow-[0_0_15px_rgba(227,30,36,0.6)] group-hover:scale-110 transition duration-300">
+                            <i class="fa-solid fa-umbrella"></i>
+                        </div>
+                        <div class="text-left drop-shadow-md">
+                            <h4 class="text-tech-red font-bold uppercase text-xs md:text-sm mb-1 tracking-wider group-hover:text-white transition">1 YEAR WARRANTY</h4>
+                            <p class="text-gray-200 text-[10px] md:text-xs leading-tight opacity-90 font-medium">All of our products are made with care and covered for one year against manufacturing defects</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="py-10 bg-tech-bg">
+        <div class="container mx-auto px-4 grid md:grid-cols-2 gap-6">
+            <div class="bg-tech-card rounded-xl p-8 relative overflow-hidden group border border-gray-800 hover:border-tech-yellow transition h-64 flex items-center">
+                <img src="Images/banner3-1.jpg" class="w-full h-full object-cover absolute right-[-20px] top-1/2 -translate-y-1/2 w-64 group-hover:scale-110 transition duration-500 drop-shadow-lg" alt="Cooler">
+                
+                <div class="z-10 relative w-1/2">
+                    <h3 class="text-tech-yellow font-orbitron font-bold text-xl mb-1">MICHELIN</h3>
+                    <h2 class="text-white text-2xs font-black italic uppercase mb-4">PREMIUM PERFORMANCE</h2>
+                    <button class="bg-white text-black text-xs font-bold py-2 px-5 rounded-full hover:bg-tech-yellow transition cursor-pointer">SHOP NOW</button>
+                </div>
+            </div>
+            <div class="bg-tech-card rounded-xl p-8 relative overflow-hidden group border border-gray-800 hover:border-tech-red transition h-64 flex items-center">
+                <img src="Images/banner3-2.jpg" class="w-full h-full object-cover absolute right-[-20px] top-1/2 -translate-y-1/2 w-64 group-hover:scale-110 transition duration-500 drop-shadow-lg" alt="Brakes">
+                
+                <div class="z-10 relative w-1/2">
+                    <h3 class="text-tech-red font-orbitron font-bold text-xl mb-1">BETTER BRAKES</h3>
+                    <h2 class="text-white text-2xs font-black italic uppercase mb-4">BEST SELLERS BRAKES SYSTEM</h2>
+                    <button class="bg-white text-black text-xs font-bold py-2 px-5 rounded-full hover:bg-tech-red hover:text-white transition cursor-pointer">SHOP NOW</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-10 bg-tech-bg">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                <div class="bg-tech-card border border-gray-800 rounded-lg p-6 text-center hover:border-tech-yellow transition group cursor-pointer h-full">
+                    <div class="mb-4">
+                        <img src="Images/car-wheel2.svg" alt="Tires icon" class="h-16 w-16 mx-auto object-contain transition duration-300 group-hover:scale-110 icon-yellow">
+                    </div>
+                    <h3 class="text-white font-orbitron font-bold text-sm mb-3 uppercase">Tires & Wheels</h3>
+                    <ul class="text-gray-500 text-[10px] space-y-1 font-bold"><li>Michelin</li><li>Goodyear Tires</li><li>Continental</li><li>Good Year</li><li>Yokohama</li></ul>
+                </div>
+
+                <div class="bg-tech-card border border-gray-800 rounded-lg p-6 text-center hover:border-tech-yellow transition group cursor-pointer h-full">
+                    <div class="mb-4">
+                         <img src="Images/brake2.svg" alt="Brakes icon" class="h-16 w-16 mx-auto object-contain transition duration-300 group-hover:scale-110 icon-yellow">
+                    </div>
+                    <h3 class="text-white font-orbitron font-bold text-sm mb-3 uppercase">Brakes System</h3>
+                    <ul class="text-gray-500 text-[10px] space-y-1 font-bold"><li>Frictional brake</li><li>Air brake</li><li>Hydraulic brake</li><li>Electromagnetic brake</li><li>Servo brake</li></ul>
+                </div>
+
+                <div class="bg-tech-card border border-gray-800 rounded-lg p-6 text-center hover:border-tech-yellow transition group cursor-pointer h-full">
+                    <div class="mb-4">
+                         <img src="Images/suspension2.svg" alt="Suspension icon" class="h-16 w-16 mx-auto object-contain transition duration-300 group-hover:scale-110 icon-yellow">
+                    </div>
+                    <h3 class="text-white font-orbitron font-bold text-sm mb-3 uppercase">Suspension</h3>
+                    <ul class="text-gray-500 text-[10px] space-y-1 font-bold"><li>Bilstein</li><li>Skyjacker</li><li>HSD Coilovers</li><li>Eibach</li><li>KYB</li></ul>
+                </div>
+
+                <div class="bg-tech-card border border-gray-800 rounded-lg p-6 text-center hover:border-tech-yellow transition group cursor-pointer h-full">
+                    <div class="mb-4">
+                         <img src="Images/audio-system2.svg" alt="Audio icon" class="h-16 w-16 mx-auto object-contain transition duration-300 group-hover:scale-110 icon-yellow">
+                    </div>
+                    <h3 class="text-white font-orbitron font-bold text-sm mb-3 uppercase">Audio System</h3>
+                    <ul class="text-gray-500 text-[10px] space-y-1 font-bold"><li>Pioneer</li><li>Bose Corporation</li><li>Focal</li><li>Boston Acoustics</li><li>Sony</li></ul>
+                </div>
+
+                <div class="bg-tech-card border border-gray-800 rounded-lg p-6 text-center hover:border-tech-yellow transition group cursor-pointer h-full">
+                    <div class="mb-4">
+                         <img src="Images/headlight2.svg" alt="Headlight icon" class="h-16 w-16 mx-auto object-contain transition duration-300 group-hover:scale-110 icon-yellow">
+                    </div>
+                    <h3 class="text-white font-orbitron font-bold text-sm mb-3 uppercase">Headlight</h3>
+                    <ul class="text-gray-500 text-[10px] space-y-1 font-bold"><li>Multibeam Led</li><li>Projector Headlights</li><li>Chevrolet</li><li>Peugeot</li><li>Toyota</li></ul>
+                </div>
+
+                <div class="bg-tech-card border border-gray-800 rounded-lg p-6 text-center hover:border-tech-yellow transition group cursor-pointer h-full">
+                    <div class="mb-4">
+                         <img src="Images/rims2.svg" alt="Rims icon" class="h-16 w-16 mx-auto object-contain transition duration-300 group-hover:scale-110 icon-yellow">
+                    </div>
+                    <h3 class="text-white font-orbitron font-bold text-sm mb-3 uppercase">Automotive Rims</h3>
+                    <ul class="text-gray-500 text-[10px] space-y-1 font-bold"><li>Fondmetal</li><li>American Racing</li><li>Lexani</li><li>Vossen</li><li>Moto Metal</li></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="py-16 bg-tech-bg">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-10">
+            <h2 class="text-3xl font-orbitron font-black text-white uppercase mb-6 tracking-wide">Best Sellers</h2>
+            <div class="flex justify-center flex-wrap gap-6 text-sm font-bold uppercase tracking-wider">
+                <button class="tab-btn text-tech-red border-b-2 border-tech-red pb-1" data-target="tires-wheels">Tires & Wheels</button>
+                <button class="tab-btn text-gray-500 hover:text-white transition" data-target="headlight">Headlight</button>
+                <button class="tab-btn text-gray-500 hover:text-white transition" data-target="automotive-rims">Automotive Rims</button>
+            </div>
+        </div>
+
+        <div class="border border-gray-800 p-8 rounded-xl bg-[#0e121a]">
+
+            <div id="tires-wheels" class="tab-content block">
+                <div class="slider-container overflow-hidden relative">
+                    <div class="slider-track flex w-[150%] transition-transform duration-500 ease-in-out">
+                        <div class="w-1/6 px-3 flex flex-col gap-6">
+                            <div class="group">
+                                <div class="relative bg-white rounded-lg h-64 flex items-center justify-center p-4 mb-4">
+                                    <img src="Images/bs1.webp" class="max-h-full">
+                                    <div class="absolute top-3 right-3 text-gray-300"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                                <div><span class="text-xs text-gray-500 font-bold">Tires & Wheels</span>
+                                    <h3 class="text-white font-bold text-sm my-1">Mâm xe hợp kim cao cấp</h3>
+                                    <div class="text-tech-red font-bold">$122.00</div>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="relative bg-white rounded-lg h-64 flex items-center justify-center p-4 mb-4">
+                                    <img src="Images/bs2.webp" class="max-h-full">
+                                    <div class="absolute top-3 right-3 text-gray-300"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                                <div><span class="text-xs text-gray-500 font-bold">Tires & Wheels</span>
+                                    <h3 class="text-white font-bold text-sm my-1">Off-road Tire 4x4</h3>
+                                    <div class="text-tech-red font-bold">$150.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-1/6 px-3 flex flex-col gap-6">
+                            <div class="group">
+                                <div class="relative bg-white rounded-lg h-64 flex items-center justify-center p-4 mb-4">
+                                    <img src="Images/bs3.webp" class="max-h-full">
+                                    <div class="absolute top-3 right-3 text-gray-300"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                                <div><span class="text-xs text-gray-500 font-bold">Tires & Wheels</span>
+                                    <h3 class="text-white font-bold text-sm my-1">Dorman Steel Wheel</h3>
+                                    <div class="text-tech-red font-bold">$90.00</div>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="relative bg-white rounded-lg h-64 flex items-center justify-center p-4 mb-4">
+                                    <img src="Images/bs4.webp" class="max-h-full">
+                                    <div class="absolute top-3 right-3 text-gray-300"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                                <div><span class="text-xs text-gray-500 font-bold">Tires & Wheels</span>
+                                    <h3 class="text-white font-bold text-sm my-1">Aluminum Rim Sport</h3>
+                                    <div class="text-tech-red font-bold">$133.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-1/6 px-3 flex flex-col gap-6">
+                            <div class="group">
+                                <div class="relative bg-white rounded-lg h-64 flex items-center justify-center p-4 mb-4">
+                                    <img src="Images/bs5.webp" class="max-h-full">
+                                    <div class="absolute top-3 right-3 text-gray-300"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                                <div><span class="text-xs text-gray-500 font-bold">Tires & Wheels</span>
+                                    <h3 class="text-white font-bold text-sm my-1">Racing Wheel 18"</h3>
+                                    <div class="text-tech-red font-bold">$180.00</div>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="relative bg-white rounded-lg h-64 flex items-center justify-center p-4 mb-4">
+                                    <img src="Images/bs6.webp" class="max-h-full">
+                                    <div class="absolute top-3 right-3 text-gray-300"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                                <div><span class="text-xs text-gray-500 font-bold">Tires & Wheels</span>
+                                    <h3 class="text-white font-bold text-sm my-1">Steel Wheel Honda</h3>
+                                    <div class="text-tech-red font-bold">$110.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-1/6 px-3 flex flex-col gap-6">
+                            <div class="group">
+                                <div class="relative bg-white rounded-lg h-64 flex items-center justify-center p-4 mb-4">
+                                    <img src="Images/bs7.webp" class="max-h-full">
+                                    <div class="absolute top-3 right-3 text-gray-300"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                                <div><span class="text-xs text-gray-500 font-bold">Tires & Wheels</span>
+                                    <h3 class="text-white font-bold text-sm my-1">Chrome Rim Alloy</h3>
+                                    <div class="text-tech-red font-bold">$210.00</div>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="relative bg-white rounded-lg h-64 flex items-center justify-center p-4 mb-4">
+                                    <img src="Images/bs8.webp" class="max-h-full">
+                                    <div class="absolute top-3 right-3 text-gray-300"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                                <div><span class="text-xs text-gray-500 font-bold">Tires & Wheels</span>
+                                    <h3 class="text-white font-bold text-sm my-1">Multi-color Racing</h3>
+                                    <div class="text-tech-red font-bold">$100.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-1/6 px-3 flex flex-col gap-6">
+                            <div class="group">
+                                <div class="relative bg-white rounded-lg h-64 flex items-center justify-center p-4 mb-4">
+                                    <img src="Images/bs9.webp" class="max-h-full">
+                                    <div class="absolute top-3 right-3 text-gray-300"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                                <div><span class="text-xs text-gray-500 font-bold">Tires & Wheels</span>
+                                    <h3 class="text-white font-bold text-sm my-1">Mâm xe 5 chấu kép</h3>
+                                    <div class="text-tech-red font-bold">$145.00</div>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="relative bg-white rounded-lg h-64 flex items-center justify-center p-4 mb-4">
+                                    <img src="Images/bs10.webp" class="max-h-full">
+                                    <div class="absolute top-3 right-3 text-gray-300"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                                <div><span class="text-xs text-gray-500 font-bold">Tires & Wheels</span>
+                                    <h3 class="text-white font-bold text-sm my-1">Mâm đúc hợp kim</h3>
+                                    <div class="text-tech-red font-bold">$140.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-1/6 px-3 flex flex-col gap-6">
+                            <div class="group">
+                                <div class="relative bg-white rounded-lg h-64 flex items-center justify-center p-4 mb-4">
+                                    <img src="Images/bs11.webp" class="max-h-full">
+                                    <div class="absolute top-3 right-3 text-gray-300"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                                <div><span class="text-xs text-gray-500 font-bold">Tires & Wheels</span>
+                                    <h3 class="text-white font-bold text-sm my-1">Vành xe thể thao đen</h3>
+                                    <div class="text-tech-red font-bold">$95.00</div>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="relative bg-white rounded-lg h-64 flex items-center justify-center p-4 mb-4">
+                                    <img src="Images/bs12.webp" class="max-h-full">
+                                    <div class="absolute top-3 right-3 text-gray-300"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                                <div><span class="text-xs text-gray-500 font-bold">Tires & Wheels</span>
+                                    <h3 class="text-white font-bold text-sm my-1">Vành xe đua Red Line</h3>
+                                    <div class="text-tech-red font-bold">$105.00</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="flex justify-center mt-6 gap-2">
+                    <button class="dot-btn w-3 h-3 rounded-full bg-tech-red cursor-pointer transition-all duration-300 hover:scale-125" data-index="0"></button>
+                    <button class="dot-btn w-3 h-3 rounded-full bg-gray-600 hover:bg-white cursor-pointer transition-all duration-300 hover:scale-125" data-index="1"></button>
+                    <button class="dot-btn w-3 h-3 rounded-full bg-gray-600 hover:bg-white cursor-pointer transition-all duration-300 hover:scale-125" data-index="2"></button>
+                </div>
+            </div>
+
+            <div id="headlight" class="tab-content hidden">
+                <div class="slider-container overflow-hidden relative">
+                    <div class="slider-track flex w-[150%] transition-transform duration-500 ease-in-out">
+                        <div class="w-1/6 px-3 flex flex-col gap-6">
+                            <div class="group">
+                                <div class="relative bg-white rounded-lg h-64 flex items-center justify-center p-4 mb-4">
+                                    <img src="Images/h1.webp" class="max-h-full">
+                                    <div class="absolute top-3 right-3 text-gray-300"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                                <div><span class="text-xs text-gray-500 font-bold">Headlight</span>
+                                    <h3 class="text-white font-bold text-sm my-1">Đèn pha LED Projector</h3>
+                                    <div class="text-tech-red font-bold">$250.00</div>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="relative bg-white rounded-lg h-64 flex items-center justify-center p-4 mb-4">
+                                    <img src="Images/h2.webp" class="max-h-full">
+                                    <div class="absolute top-3 right-3 text-gray-300"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                                <div><span class="text-xs text-gray-500 font-bold">Headlight</span>
+                                    <h3 class="text-white font-bold text-sm my-1">Đèn Bi-Xenon</h3>
+                                    <div class="text-tech-red font-bold">$200.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-1/6 px-3 flex flex-col gap-6">
+                            <div class="group">
+                                <div class="relative bg-white rounded-lg h-64 flex items-center justify-center p-4 mb-4">
+                                    <img src="Images/h3.webp" class="max-h-full">
+                                    <div class="absolute top-3 right-3 text-gray-300"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                                <div><span class="text-xs text-gray-500 font-bold">Headlight</span>
+                                    <h3 class="text-white font-bold text-sm my-1">Đèn pha Halogen</h3>
+                                    <div class="text-tech-red font-bold">$120.00</div>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="relative bg-white rounded-lg h-64 flex items-center justify-center p-4 mb-4">
+                                    <img src="Images/h4.webp" class="max-h-full">
+                                    <div class="absolute top-3 right-3 text-gray-300"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                                <div><span class="text-xs text-gray-500 font-bold">Headlight</span>
+                                    <h3 class="text-white font-bold text-sm my-1">Đèn sương mù LED</h3>
+                                    <div class="text-tech-red font-bold">$80.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-1/6 px-3 flex flex-col gap-6">
+                            <div class="group">
+                                <div class="relative bg-white rounded-lg h-64 flex items-center justify-center p-4 mb-4">
+                                    <img src="Images/h5.webp" class="max-h-full">
+                                    <div class="absolute top-3 right-3 text-gray-300"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                                <div><span class="text-xs text-gray-500 font-bold">Headlight</span>
+                                    <h3 class="text-white font-bold text-sm my-1">Đèn hậu LED Audi</h3>
+                                    <div class="text-tech-red font-bold">$180.00</div>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="relative bg-white rounded-lg h-64 flex items-center justify-center p-4 mb-4">
+                                    <img src="Images/h6.webp" class="max-h-full">
+                                    <div class="absolute top-3 right-3 text-gray-300"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                                <div><span class="text-xs text-gray-500 font-bold">Headlight</span>
+                                    <h3 class="text-white font-bold text-sm my-1">Đèn gầm phá sương</h3>
+                                    <div class="text-tech-red font-bold">$90.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-1/6 px-3 flex flex-col gap-6">
+                            <div class="group">
+                                <div class="relative bg-white rounded-lg h-64 flex items-center justify-center p-4 mb-4">
+                                    <img src="Images/h7.webp" class="max-h-full">
+                                    <div class="absolute top-3 right-3 text-gray-300"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                                <div><span class="text-xs text-gray-500 font-bold">Headlight</span>
+                                    <h3 class="text-white font-bold text-sm my-1">Đèn pha Laser BMW</h3>
+                                    <div class="text-tech-red font-bold">$500.00</div>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="relative bg-white rounded-lg h-64 flex items-center justify-center p-4 mb-4">
+                                    <img src="Images/h8.webp" class="max-h-full">
+                                    <div class="absolute top-3 right-3 text-gray-300"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                                <div><span class="text-xs text-gray-500 font-bold">Headlight</span>
+                                    <h3 class="text-white font-bold text-sm my-1">Đèn mí LED Daylight</h3>
+                                    <div class="text-tech-red font-bold">$60.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-1/6 px-3 flex flex-col gap-6">
+                            <div class="group">
+                                <div class="relative bg-white rounded-lg h-64 flex items-center justify-center p-4 mb-4">
+                                    <img src="Images/h9.webp" class="max-h-full">
+                                    <div class="absolute top-3 right-3 text-gray-300"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                                <div><span class="text-xs text-gray-500 font-bold">Headlight</span>
+                                    <h3 class="text-white font-bold text-sm my-1">Đèn pha Mercedes</h3>
+                                    <div class="text-tech-red font-bold">$350.00</div>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="relative bg-white rounded-lg h-64 flex items-center justify-center p-4 mb-4">
+                                    <img src="Images/h10.webp" class="max-h-full">
+                                    <div class="absolute top-3 right-3 text-gray-300"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                                <div><span class="text-xs text-gray-500 font-bold">Headlight</span>
+                                    <h3 class="text-white font-bold text-sm my-1">Bóng đèn thay thế H4</h3>
+                                    <div class="text-tech-red font-bold">$20.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-1/6 px-3 flex flex-col gap-6">
+                            <div class="group">
+                                <div class="relative bg-white rounded-lg h-64 flex items-center justify-center p-4 mb-4">
+                                    <img src="Images/h11.webp" class="max-h-full">
+                                    <div class="absolute top-3 right-3 text-gray-300"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                                <div><span class="text-xs text-gray-500 font-bold">Headlight</span>
+                                    <h3 class="text-white font-bold text-sm my-1">Đèn hậu LED Mazda</h3>
+                                    <div class="text-tech-red font-bold">$130.00</div>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="relative bg-white rounded-lg h-64 flex items-center justify-center p-4 mb-4">
+                                    <img src="Images/h12.webp" class="max-h-full">
+                                    <div class="absolute top-3 right-3 text-gray-300"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                                <div><span class="text-xs text-gray-500 font-bold">Headlight</span>
+                                    <h3 class="text-white font-bold text-sm my-1">Đèn LED nội thất</h3>
+                                    <div class="text-tech-red font-bold">$40.00</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center mt-6 gap-2">
+                    <button class="dot-btn w-3 h-3 rounded-full bg-tech-red cursor-pointer transition-all duration-300 hover:scale-125" data-index="0"></button>
+                    <button class="dot-btn w-3 h-3 rounded-full bg-gray-600 hover:bg-white cursor-pointer transition-all duration-300 hover:scale-125" data-index="1"></button>
+                    <button class="dot-btn w-3 h-3 rounded-full bg-gray-600 hover:bg-white cursor-pointer transition-all duration-300 hover:scale-125" data-index="2"></button>
+                </div>
+            </div>
+
+            <div id="automotive-rims" class="tab-content hidden">
+                <div class="slider-container overflow-hidden relative">
+                    <div class="slider-track flex w-[150%] transition-transform duration-500 ease-in-out">
+                        <div class="w-1/6 px-3 flex flex-col gap-6">
+                            <div class="group">
+                                <div class="relative bg-white rounded-lg h-64 flex items-center justify-center p-4 mb-4">
+                                    <img src="Images/ar1.webp" class="max-h-full">
+                                    <div class="absolute top-3 right-3 text-gray-300"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                                <div><span class="text-xs text-gray-500 font-bold">Automotive Rims</span>
+                                    <h3 class="text-white font-bold text-sm my-1">Mâm xe 18 inch Matte</h3>
+                                    <div class="text-tech-red font-bold">$180.00</div>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="relative bg-white rounded-lg h-64 flex items-center justify-center p-4 mb-4">
+                                    <img src="Images/ar2.webp" class="max-h-full">
+                                    <div class="absolute top-3 right-3 text-gray-300"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                                <div><span class="text-xs text-gray-500 font-bold">Automotive Rims</span>
+                                    <h3 class="text-white font-bold text-sm my-1">Bộ phanh Brembo Vàng</h3>
+                                    <div class="text-tech-red font-bold">$25.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-1/6 px-3 flex flex-col gap-6">
+                            <div class="group">
+                                <div class="relative bg-white rounded-lg h-64 flex items-center justify-center p-4 mb-4">
+                                    <img src="Images/ar3.webp" class="max-h-full">
+                                    <div class="absolute top-3 right-3 text-gray-300"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                                <div><span class="text-xs text-gray-500 font-bold">Automotive Rims</span>
+                                    <h3 class="text-white font-bold text-sm my-1">Mâm xe hợp kim Chrome</h3>
+                                    <div class="text-tech-red font-bold">$190.00</div>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="relative bg-white rounded-lg h-64 flex items-center justify-center p-4 mb-4">
+                                    <img src="Images/ar4.webp" class="max-h-full">
+                                    <div class="absolute top-3 right-3 text-gray-300"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                                <div><span class="text-xs text-gray-500 font-bold">Automotive Rims</span>
+                                    <h3 class="text-white font-bold text-sm my-1">Vô lăng Gaming Racing</h3>
+                                    <div class="text-tech-red font-bold">$18.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-1/6 px-3 flex flex-col gap-6">
+                            <div class="group">
+                                <div class="relative bg-white rounded-lg h-64 flex items-center justify-center p-4 mb-4">
+                                    <img src="Images/ar5.webp" class="max-h-full">
+                                    <div class="absolute top-3 right-3 text-gray-300"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                                <div><span class="text-xs text-gray-500 font-bold">Automotive Rims</span>
+                                    <h3 class="text-white font-bold text-sm my-1">Vành xe thể thao OZ</h3>
+                                    <div class="text-tech-red font-bold">$210.00</div>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="relative bg-white rounded-lg h-64 flex items-center justify-center p-4 mb-4">
+                                    <img src="Images/ar6.webp" class="max-h-full">
+                                    <div class="absolute top-3 right-3 text-gray-300"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                                <div><span class="text-xs text-gray-500 font-bold">Automotive Rims</span>
+                                    <h3 class="text-white font-bold text-sm my-1">Phanh gốm Carbon</h3>
+                                    <div class="text-tech-red font-bold">$800.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-1/6 px-3 flex flex-col gap-6">
+                            <div class="group">
+                                <div class="relative bg-white rounded-lg h-64 flex items-center justify-center p-4 mb-4">
+                                    <img src="Images/ar7.webp" class="max-h-full">
+                                    <div class="absolute top-3 right-3 text-gray-300"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                                <div><span class="text-xs text-gray-500 font-bold">Automotive Rims</span>
+                                    <h3 class="text-white font-bold text-sm my-1">Mâm xe BBS vàng</h3>
+                                    <div class="text-tech-red font-bold">$350.00</div>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="relative bg-white rounded-lg h-64 flex items-center justify-center p-4 mb-4">
+                                    <img src="Images/ar8.webp" class="max-h-full">
+                                    <div class="absolute top-3 right-3 text-gray-300"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                                <div><span class="text-xs text-gray-500 font-bold">Automotive Rims</span>
+                                    <h3 class="text-white font-bold text-sm my-1">Vô lăng da Sparco</h3>
+                                    <div class="text-tech-red font-bold">$120.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-1/6 px-3 flex flex-col gap-6">
+                            <div class="group">
+                                <div class="relative bg-white rounded-lg h-64 flex items-center justify-center p-4 mb-4">
+                                    <img src="Images/ar9.webp" class="max-h-full">
+                                    <div class="absolute top-3 right-3 text-gray-300"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                                <div><span class="text-xs text-gray-500 font-bold">Automotive Rims</span>
+                                    <h3 class="text-white font-bold text-sm my-1">Vành đúc Lenso</h3>
+                                    <div class="text-tech-red font-bold">$160.00</div>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="relative bg-white rounded-lg h-64 flex items-center justify-center p-4 mb-4">
+                                    <img src="Images/ar10.webp" class="max-h-full">
+                                    <div class="absolute top-3 right-3 text-gray-300"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                                <div><span class="text-xs text-gray-500 font-bold">Automotive Rims</span>
+                                    <h3 class="text-white font-bold text-sm my-1">Heo dầu Frando</h3>
+                                    <div class="text-tech-red font-bold">$50.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-1/6 px-3 flex flex-col gap-6">
+                            <div class="group">
+                                <div class="relative bg-white rounded-lg h-64 flex items-center justify-center p-4 mb-4">
+                                    <img src="Images/ar11.webp" class="max-h-full">
+                                    <div class="absolute top-3 right-3 text-gray-300"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                                <div><span class="text-xs text-gray-500 font-bold">Automotive Rims</span>
+                                    <h3 class="text-white font-bold text-sm my-1">Mâm xe 5 chấu kép</h3>
+                                    <div class="text-tech-red font-bold">$220.00</div>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="relative bg-white rounded-lg h-64 flex items-center justify-center p-4 mb-4">
+                                    <img src="Images/ar12.webp" class="max-h-full">
+                                    <div class="absolute top-3 right-3 text-gray-300"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                                <div><span class="text-xs text-gray-500 font-bold">Automotive Rims</span>
+                                    <h3 class="text-white font-bold text-sm my-1">Vô lăng Momo</h3>
+                                    <div class="text-tech-red font-bold">$110.00</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center mt-6 gap-2">
+                    <button class="dot-btn w-3 h-3 rounded-full bg-tech-red cursor-pointer transition-all duration-300 hover:scale-125" data-index="0"></button>
+                    <button class="dot-btn w-3 h-3 rounded-full bg-gray-600 hover:bg-white cursor-pointer transition-all duration-300 hover:scale-125" data-index="1"></button>
+                    <button class="dot-btn w-3 h-3 rounded-full bg-gray-600 hover:bg-white cursor-pointer transition-all duration-300 hover:scale-125" data-index="2"></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <section class="py-16 bg-black">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-orbitron font-black text-center text-white mb-12 uppercase">Flash <span class="text-white">Sale</span></h2>
+        
+        <div class="overflow-hidden relative w-full">
+            
+            <div id="flash-sale-track" class="flex transition-transform duration-500 ease-in-out w-full">
+                
+                <div class="w-full flex-shrink-0">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-white rounded-2xl p-6 flex items-center relative overflow-hidden shadow-[0_0_20px_rgba(255,255,255,0.1)]">
+                            <div class="absolute top-4 left-4 bg-green-500 text-white text-[10px] font-bold px-2 py-1 uppercase rounded">New</div>
+                            <div class="w-1/2">
+                                <img src="Images/1-22-700x700.jpg" alt="Product 1" class="w-full hover:scale-110 transition duration-500">
+                            </div>
+                            <div class="w-1/2 pl-4">
+                                <h3 class="text-black font-bold text-lg mb-2">Bánh xe thể thao đa sắc màu</h3>
+                                <div class="flex items-center gap-2 mb-3">
+                                    <span class="text-black font-bold text-xl">$100.00</span>
+                                    <span class="bg-red-600 text-white text-[10px] px-1 rounded">-20%</span>
+                                </div>
+                                <div class="flex gap-2 mb-4 countdown-timer">
+                                    <div class="timer-box bg-gray-200 p-1 rounded text-xs font-bold w-8 text-center"><span class="days">02</span></div>
+                                    <div class="timer-box bg-gray-200 p-1 rounded text-xs font-bold w-8 text-center"><span class="hours">12</span></div>
+                                    <div class="timer-box bg-gray-200 p-1 rounded text-xs font-bold w-8 text-center"><span class="mins">45</span></div>
+                                    <div class="timer-box bg-gray-200 p-1 rounded text-xs font-bold w-8 text-center"><span class="secs">30</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-2xl p-6 flex items-center relative overflow-hidden shadow-[0_0_20px_rgba(255,255,255,0.1)]">
+                            <div class="w-1/2">
+                                <img src="Images/2-19-600x600.jpg" alt="Product 2" class="w-full hover:scale-110 transition duration-500">
+                            </div>
+                            <div class="w-1/2 pl-4">
+                                <h3 class="text-black font-bold text-lg mb-2">Khung bánh xe màu đỏ Racing</h3>
+                                <div class="flex items-center gap-2 mb-3">
+                                    <span class="text-black font-bold text-xl">$190.00</span>
+                                    <span class="bg-red-600 text-white text-[10px] px-1 rounded">-20%</span>
+                                </div>
+                                <div class="flex gap-2 mb-4 countdown-timer">
+                                    <div class="timer-box bg-gray-200 p-1 rounded text-xs font-bold w-8 text-center"><span class="days">01</span></div>
+                                    <div class="timer-box bg-gray-200 p-1 rounded text-xs font-bold w-8 text-center"><span class="hours">05</span></div>
+                                    <div class="timer-box bg-gray-200 p-1 rounded text-xs font-bold w-8 text-center"><span class="mins">20</span></div>
+                                    <div class="timer-box bg-gray-200 p-1 rounded text-xs font-bold w-8 text-center"><span class="secs">15</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full flex-shrink-0">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-white rounded-2xl p-6 flex items-center relative overflow-hidden shadow-[0_0_20px_rgba(255,255,255,0.1)]">
+                            <div class="absolute top-4 left-4 bg-blue-500 text-white text-[10px] font-bold px-2 py-1 uppercase rounded">Hot</div>
+                            <div class="w-1/2">
+                                <img src="Images/3.webp" alt="Product 3" class="w-full hover:scale-110 transition duration-500">
+                            </div>
+                            <div class="w-1/2 pl-4">
+                                <h3 class="text-black font-bold text-lg mb-2">Mâm xe hợp kim Titan</h3>
+                                <div class="flex items-center gap-2 mb-3">
+                                    <span class="text-black font-bold text-xl">$250.00</span>
+                                    <span class="bg-red-600 text-white text-[10px] px-1 rounded">-15%</span>
+                                </div>
+                                <div class="flex gap-2 mb-4 countdown-timer">
+                                    <div class="timer-box bg-gray-200 p-1 rounded text-xs font-bold w-8 text-center">00</div>
+                                    <div class="timer-box bg-gray-200 p-1 rounded text-xs font-bold w-8 text-center">00</div>
+                                    <div class="timer-box bg-gray-200 p-1 rounded text-xs font-bold w-8 text-center">00</div>
+                                    <div class="timer-box bg-gray-200 p-1 rounded text-xs font-bold w-8 text-center">00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-2xl p-6 flex items-center relative overflow-hidden shadow-[0_0_20px_rgba(255,255,255,0.1)]">
+                            <div class="w-1/2">
+                                <img src="Images/4.webp" alt="Product 4" class="w-full hover:scale-110 transition duration-500">
+                            </div>
+                            <div class="w-1/2 pl-4">
+                                <h3 class="text-black font-bold text-lg mb-2">Vô lăng da Carbon Fiber</h3>
+                                <div class="flex items-center gap-2 mb-3">
+                                    <span class="text-black font-bold text-xl">$320.00</span>
+                                    <span class="bg-red-600 text-white text-[10px] px-1 rounded">-10%</span>
+                                </div>
+                                <div class="flex gap-2 mb-4 countdown-timer">
+                                    <div class="timer-box bg-gray-200 p-1 rounded text-xs font-bold w-8 text-center">00</div>
+                                    <div class="timer-box bg-gray-200 p-1 rounded text-xs font-bold w-8 text-center">00</div>
+                                    <div class="timer-box bg-gray-200 p-1 rounded text-xs font-bold w-8 text-center">00</div>
+                                    <div class="timer-box bg-gray-200 p-1 rounded text-xs font-bold w-8 text-center">00</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="flex justify-center mt-8 gap-3">
+            <button onclick="moveFlashSale(0)" id="fs-dot-0" class="w-3 h-3 rounded-full bg-red-600 transition-all duration-300 scale-125"></button>
+            <button onclick="moveFlashSale(1)" id="fs-dot-1" class="w-3 h-3 rounded-full bg-gray-600 hover:bg-white transition-all duration-300"></button>
+        </div>
+
+    </div>
+</section>
+
+
+    <section class="py-12 bg-tech-bg">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                
+                <div class="brand-box"><img src="Images/logo-1.png" alt="Brand 1" class="brand-img"></div>
+                <div class="brand-box"><img src="Images/logo-2.png" alt="Brand 2" class="brand-img"></div>
+                <div class="brand-box"><img src="Images/logo-3.png" alt="Barand 3" class="brand-img"></div>
+                <div class="brand-box"><img src="Images/logo-4.png" alt="Brand 4" class="brand-img"></div>
+                <div class="brand-box"><img src="Images/logo-5.png" alt="Brand 5" class="brand-img"></div>
+                <div class="brand-box"><img src="Images/logo-6.png" alt="Brand 6" class="brand-img"></div>
+                <div class="brand-box"><img src="Images/logo-7.png" alt="Brand 7" class="brand-img"></div>
+                <div class="brand-box"><img src="Images/logo-8.png" alt="Brand 8" class="brand-img"></div>
+                <div class="brand-box"><img src="Images/logo-9.png" alt="Brand 9" class="brand-img"></div>
+                <div class="brand-box"><img src="Images/logo-10.png" alt="Brand 10" class="brand-img"></div>
+                <div class="brand-box"><img src="Images/logo-11.png" alt="Brand 11" class="brand-img"></div>
+                <div class="brand-box"><img src="Images/logo-12.png" alt="Brand 12" class="brand-img"></div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <section class="py-16">
+    <div class="container mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+        <div>
+            <span class="text-tech-red font-bold text-sm uppercase mb-2 block">Our Locations</span>
+            <h2 class="text-4xl font-orbitron font-bold text-white mb-6">Car Washing and Care Points</h2>
+            <p class="text-gray-400 mb-8 text-sm leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+            
+            <div class="space-y-6">
+                <div class="flex items-start gap-4">
+                    <div class="text-tech-red mt-1"><i class="fa-solid fa-location-dot"></i></div>
+                    <div>
+                        <h4 class="text-tech-red font-bold uppercase text-sm">Miami Garage</h4>
+                        <p class="text-gray-400 text-xs mt-1">15 West 21th Street, Miami FL, USA</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start gap-4">
+                    <div class="text-tech-red mt-1"><i class="fa-solid fa-location-dot"></i></div>
+                    <div>
+                        <h4 class="text-tech-red font-bold uppercase text-sm">Chicago Garage</h4>
+                        <p class="text-gray-400 text-xs mt-1">5400 N. Lakewood Ave, Chicago, IL 60640</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start gap-4">
+                    <div class="text-tech-red mt-1"><i class="fa-solid fa-location-dot"></i></div>
+                    <div>
+                        <h4 class="text-tech-red font-bold uppercase text-sm">Seattle Garage</h4>
+                        <p class="text-gray-400 text-xs mt-1">312 S Washington St Seattle WA 98104-2618</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="relative w-full h-[400px] rounded-xl overflow-hidden shadow-2xl group select-none cursor-ew-resize" id="comparison-slider">
+            <img src="Images/after.jpg" class="absolute inset-0 w-full h-full object-cover pointer-events-none" alt="After">
+            <span class="absolute bottom-4 right-4 text-white/50 font-bold uppercase z-0 text-3xl pointer-events-none">After</span>
+            
+            <div class="absolute top-0 left-0 h-full w-[50%] overflow-hidden border-r-2 border-tech-red pointer-events-none" id="resizer">
+                <img src="Images/before.jpg" class="absolute top-0 left-0 h-full max-w-none w-full object-cover" id="before-img" alt="Before">
+                <span class="absolute bottom-4 left-4 text-white/50 font-bold uppercase z-10 text-3xl">Before</span>
+            </div>
+            
+            <div class="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 z-20 flex items-center justify-center w-8 h-8 bg-white rounded-full shadow-lg pointer-events-none" id="handle" style="left: 50%;">
+                <i class="fa-solid fa-arrows-left-right text-black text-xs"></i>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="py-16 bg-tech-bg">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <span class="text-tech-red font-bold text-xs uppercase tracking-widest">WASHING PRICE</span>
+            <h2 class="text-3xl font-orbitron font-bold text-white mt-2 uppercase tracking-wider">CHOOSE YOUR PLAN</h2>
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-6">
+            
+            <div class="bg-[#0e121a] border border-gray-800 rounded-xl p-6 flex flex-col">
+                <h3 class="text-white font-bold text-sm uppercase mb-4">Express washing</h3>
+                <div class="text-tech-red text-3xl font-bold mb-6">
+                    $15.99 <span class="text-sm font-bold text-tech-red ml-1">+ TAX</span>
+                </div>
+
+                <ul class="flex-grow space-y-3 mb-8">
+                    <li class="flex justify-between items-center border-b border-gray-800 pb-2">
+                        <span class="text-gray-400 text-xs uppercase">Clean The Car Body</span>
+                        <i class="fa-solid fa-check text-green-500 text-sm"></i>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-800 pb-2">
+                        <span class="text-gray-400 text-xs uppercase">Remove Tree Sap</span>
+                        <i class="fa-solid fa-check text-green-500 text-sm"></i>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-800 pb-2">
+                        <span class="text-gray-400 text-xs uppercase">Clean & Vacuum</span>
+                        <i class="fa-solid fa-check text-green-500 text-sm"></i>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-800 pb-2">
+                        <span class="text-gray-500 text-xs uppercase">Clean the Sunroof</span>
+                        <i class="fa-solid fa-xmark text-gray-600 text-sm"></i>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-800 pb-2">
+                        <span class="text-gray-500 text-xs uppercase">Eliminate Car Odors</span>
+                        <i class="fa-solid fa-xmark text-gray-600 text-sm"></i>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-800 pb-2">
+                        <span class="text-gray-500 text-xs uppercase">Remove Hard Water Spots</span>
+                        <i class="fa-solid fa-xmark text-gray-600 text-sm"></i>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-800 pb-2">
+                        <span class="text-gray-500 text-xs uppercase">Cleaning With Chemicals</span>
+                        <i class="fa-solid fa-xmark text-gray-600 text-sm"></i>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-800 pb-2">
+                        <span class="text-gray-500 text-xs uppercase">Clean Your Engine Bay</span>
+                        <i class="fa-solid fa-xmark text-gray-600 text-sm"></i>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-800 pb-2">
+                        <span class="text-gray-500 text-xs uppercase">Clean Leather Car Seats</span>
+                        <i class="fa-solid fa-xmark text-gray-600 text-sm"></i>
+                    </li>
+                </ul>
+                
+                <button class="w-full bg-tech-red text-white py-3 rounded-lg text-xs font-bold uppercase hover:bg-red-700 transition cursor-pointer">Learn more</button>
+            </div>
+
+            <div class="bg-[#0e121a] border border-gray-800 rounded-xl p-6 flex flex-col">
+                <h3 class="text-white font-bold text-sm uppercase mb-4">Basic cleaning</h3>
+                <div class="text-tech-red text-3xl font-bold mb-6">
+                    $19.99 <span class="text-sm font-bold text-tech-red ml-1">+ TAX</span>
+                </div>
+
+                <ul class="flex-grow space-y-3 mb-8">
+                    <li class="flex justify-between items-center border-b border-gray-800 pb-2">
+                        <span class="text-gray-400 text-xs uppercase">Clean The Car Body</span>
+                        <i class="fa-solid fa-check text-green-500 text-sm"></i>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-800 pb-2">
+                        <span class="text-gray-400 text-xs uppercase">Remove Tree Sap</span>
+                        <i class="fa-solid fa-check text-green-500 text-sm"></i>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-800 pb-2">
+                        <span class="text-gray-400 text-xs uppercase">Clean & Vacuum</span>
+                        <i class="fa-solid fa-check text-green-500 text-sm"></i>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-800 pb-2">
+                        <span class="text-gray-400 text-xs uppercase">Clean the Sunroof</span>
+                        <i class="fa-solid fa-check text-green-500 text-sm"></i>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-800 pb-2">
+                        <span class="text-gray-400 text-xs uppercase">Eliminate Car Odors</span>
+                        <i class="fa-solid fa-check text-green-500 text-sm"></i>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-800 pb-2">
+                        <span class="text-gray-500 text-xs uppercase">Remove Hard Water Spots</span>
+                        <i class="fa-solid fa-xmark text-gray-600 text-sm"></i>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-800 pb-2">
+                        <span class="text-gray-500 text-xs uppercase">Cleaning With Chemicals</span>
+                        <i class="fa-solid fa-xmark text-gray-600 text-sm"></i>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-800 pb-2">
+                        <span class="text-gray-500 text-xs uppercase">Clean Your Engine Bay</span>
+                        <i class="fa-solid fa-xmark text-gray-600 text-sm"></i>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-800 pb-2">
+                        <span class="text-gray-500 text-xs uppercase">Clean Leather Car Seats</span>
+                        <i class="fa-solid fa-xmark text-gray-600 text-sm"></i>
+                    </li>
+                </ul>
+                
+                <button class="w-full bg-tech-red text-white py-3 rounded-lg text-xs font-bold uppercase hover:bg-red-700 transition cursor-pointer">Learn more</button>
+            </div>
+
+            <div class="bg-[#0e121a] border border-gray-800 rounded-xl p-6 flex flex-col">
+                <h3 class="text-white font-bold text-sm uppercase mb-4">Premium services</h3>
+                <div class="text-tech-red text-3xl font-bold mb-6">
+                    $29.99 <span class="text-sm font-bold text-tech-red ml-1">+ TAX</span>
+                </div>
+
+                <ul class="flex-grow space-y-3 mb-8">
+                    <li class="flex justify-between items-center border-b border-gray-800 pb-2">
+                        <span class="text-gray-400 text-xs uppercase">Clean The Car Body</span>
+                        <i class="fa-solid fa-check text-green-500 text-sm"></i>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-800 pb-2">
+                        <span class="text-gray-400 text-xs uppercase">Remove Tree Sap</span>
+                        <i class="fa-solid fa-check text-green-500 text-sm"></i>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-800 pb-2">
+                        <span class="text-gray-400 text-xs uppercase">Clean & Vacuum</span>
+                        <i class="fa-solid fa-check text-green-500 text-sm"></i>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-800 pb-2">
+                        <span class="text-gray-400 text-xs uppercase">Clean the Sunroof</span>
+                        <i class="fa-solid fa-check text-green-500 text-sm"></i>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-800 pb-2">
+                        <span class="text-gray-400 text-xs uppercase">Eliminate Car Odors</span>
+                        <i class="fa-solid fa-check text-green-500 text-sm"></i>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-800 pb-2">
+                        <span class="text-gray-400 text-xs uppercase">Remove Hard Water Spots</span>
+                        <i class="fa-solid fa-check text-green-500 text-sm"></i>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-800 pb-2">
+                        <span class="text-gray-400 text-xs uppercase">Cleaning With Chemicals</span>
+                        <i class="fa-solid fa-check text-green-500 text-sm"></i>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-800 pb-2">
+                        <span class="text-gray-500 text-xs uppercase">Clean Your Engine Bay</span>
+                        <i class="fa-solid fa-xmark text-gray-600 text-sm"></i>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-800 pb-2">
+                        <span class="text-gray-500 text-xs uppercase">Clean Leather Car Seats</span>
+                        <i class="fa-solid fa-xmark text-gray-600 text-sm"></i>
+                    </li>
+                </ul>
+                
+                <button class="w-full bg-tech-red text-white py-3 rounded-lg text-xs font-bold uppercase hover:bg-red-700 transition cursor-pointer">Learn more</button>
+            </div>
+
+            <div class="bg-[#0e121a] border border-gray-800 rounded-xl p-6 flex flex-col relative overflow-hidden">
+                <div class="absolute top-[15px] -right-[30px] bg-red-600 text-white text-[9px] font-bold px-10 py-1 rotate-45 transform uppercase shadow-md tracking-wider">Recommended</div>
+
+                <h3 class="text-white font-bold text-sm uppercase mb-4">Full Services</h3>
+                <div class="text-tech-red text-3xl font-bold mb-6">
+                    $59.99 <span class="text-sm font-bold text-tech-red ml-1">+ TAX</span>
+                </div>
+
+                <ul class="flex-grow space-y-3 mb-8">
+                    <li class="flex justify-between items-center border-b border-gray-800 pb-2">
+                        <span class="text-gray-400 text-xs uppercase">Clean The Car Body</span>
+                        <i class="fa-solid fa-check text-green-500 text-sm"></i>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-800 pb-2">
+                        <span class="text-gray-400 text-xs uppercase">Remove Tree Sap</span>
+                        <i class="fa-solid fa-check text-green-500 text-sm"></i>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-800 pb-2">
+                        <span class="text-gray-400 text-xs uppercase">Clean & Vacuum</span>
+                        <i class="fa-solid fa-check text-green-500 text-sm"></i>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-800 pb-2">
+                        <span class="text-gray-400 text-xs uppercase">Clean the Sunroof</span>
+                        <i class="fa-solid fa-check text-green-500 text-sm"></i>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-800 pb-2">
+                        <span class="text-gray-400 text-xs uppercase">Eliminate Car Odors</span>
+                        <i class="fa-solid fa-check text-green-500 text-sm"></i>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-800 pb-2">
+                        <span class="text-gray-400 text-xs uppercase">Remove Hard Water Spots</span>
+                        <i class="fa-solid fa-check text-green-500 text-sm"></i>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-800 pb-2">
+                        <span class="text-gray-400 text-xs uppercase">Cleaning With Chemicals</span>
+                        <i class="fa-solid fa-check text-green-500 text-sm"></i>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-800 pb-2">
+                        <span class="text-gray-400 text-xs uppercase">Clean Your Engine Bay</span>
+                        <i class="fa-solid fa-check text-green-500 text-sm"></i>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-800 pb-2">
+                        <span class="text-gray-400 text-xs uppercase">Clean Leather Car Seats</span>
+                        <i class="fa-solid fa-check text-green-500 text-sm"></i>
+                    </li>
+                </ul>
+                
+                <button class="w-full bg-tech-red text-white py-3 rounded-lg text-xs font-bold uppercase hover:bg-red-700 transition cursor-pointer">Learn more</button>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+    <section class="container mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <div class="relative rounded-xl overflow-hidden h-72 group">
+                <img src="Images/banner2-1.webp" alt="Michelin Tire" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors duration-300"></div>
+                <div class="relative z-10 p-8 flex flex-col h-full justify-center items-start">
+                    <h3 class="text-yellow-400 font-orbitron font-bold text-xl uppercase mb-2">MICHELIN TIRE</h3>
+                    <p class="text-white text-sm mb-6 uppercase tracking-wider">PREMIUM PERFORMANCE</p>
+                    <a href="#" class="bg-white text-black font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition-colors duration-300">SHOP NOW</a>
+                </div>
+            </div>
+
+            <div class="relative rounded-xl overflow-hidden h-72 group">
+                <img src="Images/banner2-2.webp" alt="Projector Headlights" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors duration-300"></div>
+                <div class="relative z-10 p-8 flex flex-col h-full justify-center items-start">
+                    <h3 class="text-yellow-400 font-orbitron font-bold text-xl uppercase mb-2">BEST SELLERS</h3>
+                    <p class="text-white text-sm mb-6 uppercase tracking-wider">PROJECTOR HEADLIGHTS</p>
+                    <a href="#" class="bg-white text-black font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition-colors duration-300">SHOP NOW</a>
+                </div>
+            </div>
+
+            <div class="relative rounded-xl overflow-hidden h-72 group">
+                <img src="Images/banner3-3.webp" alt="Sport Edition Wheels" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors duration-300"></div>
+                <div class="relative z-10 p-8 flex flex-col h-full justify-center items-start">
+                    <h3 class="text-yellow-400 font-orbitron font-bold text-xl uppercase mb-2">CAR WHEELS</h3>
+                    <p class="text-white text-sm mb-6 uppercase tracking-wider">SPORT EDITION</p>
+                    <a href="#" class="bg-white text-black font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition-colors duration-300">SHOP NOW</a>
+                </div>
+            </div>
+ 
+        </div>
+    </section>
+   
+    <section class="py-16 bg-tech-bg border-t border-gray-800">
+        <div class="container mx-auto px-4">
+            
+            <div class="flex items-center justify-between mb-10">
+                <h2 class="text-3xl font-orbitron font-black text-white uppercase tracking-wide shrink-0 pr-6">
+                    TIRES & WHEELS
+                </h2>
+                <div class="h-px bg-gray-800 flex-grow relative top-1"></div>
+                <div class="flex gap-2 pl-6 shrink-0">
+                    <span class="w-2 h-2 rounded-full border border-tech-red bg-transparent cursor-pointer"></span>
+                    <span class="w-2 h-2 rounded-full bg-gray-600 hover:bg-white cursor-pointer transition"></span>
+                    <span class="w-2 h-2 rounded-full bg-gray-600 hover:bg-white cursor-pointer transition"></span>
+                    <span class="w-2 h-2 rounded-full bg-gray-600 hover:bg-white cursor-pointer transition"></span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+                
+                <div class="col-span-1">
+                    <ul class="space-y-4 text-sm font-medium text-gray-400">
+                        <li><a href="#" class="text-white hover:text-tech-red transition block">Michelin</a></li>
+                        <li><a href="#" class="hover:text-white hover:translate-x-1 transition block">Goodyear Tires</a></li>
+                        <li><a href="#" class="hover:text-white hover:translate-x-1 transition block">Continental</a></li>
+                        <li><a href="#" class="hover:text-white hover:translate-x-1 transition block">Good Year</a></li>
+                        <li><a href="#" class="hover:text-white hover:translate-x-1 transition block">Yokohama</a></li>
+                        <li><a href="#" class="hover:text-white hover:translate-x-1 transition block">Toyo Tires</a></li>
+                        <li><a href="#" class="hover:text-white hover:translate-x-1 transition block">Bridgestone</a></li>
+                        <li><a href="#" class="hover:text-white hover:translate-x-1 transition block">Casumina</a></li>
+                        <li><a href="#" class="hover:text-white hover:translate-x-1 transition block">Deestone</a></li>
+                    </ul>
+
+                    <a href="#" class="inline-flex items-center mt-8 text-white text-sm font-bold hover:text-tech-red transition group">
+                        Shop All Categories 
+                        <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i>
+                    </a>
+                </div>
+
+                <div class="col-span-1 lg:col-span-3">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                        <div class="group">
+                            <div class="relative bg-white rounded-xl overflow-hidden h-64 flex items-center justify-center p-6 mb-4">
+                                <img src="Images/2-34-600x600.webp" alt="Silver Rim" class="max-h-full max-w-full object-contain group-hover:scale-110 transition duration-500">
+                                <div class="absolute top-4 right-4 text-gray-300 hover:text-tech-red cursor-pointer transition">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="text-[10px] text-gray-500 uppercase font-bold tracking-wider">CAR AUDIO SYSTEMS</span>
+                                <h3 class="text-white font-bold text-sm my-1 leading-snug group-hover:text-tech-red transition cursor-pointer">
+                                    Mâm xe hợp kim nhôm đúc Offroad
+                                </h3>
+                                <div class="text-tech-yellow text-xs mb-2">
+                                    <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                                    <span class="text-gray-500 ml-1">(0)</span>
+                                </div>
+                                <div class="text-tech-red font-bold text-lg">$133.00</div>
+                            </div>
+                        </div>
+
+                        <div class="group">
+                            <div class="relative bg-white rounded-xl overflow-hidden h-64 flex items-center justify-center p-6 mb-4">
+                                <img src="Images/2-32-600x600.webp" alt="Steering Wheel" class="max-h-full max-w-full object-contain group-hover:scale-110 transition duration-500">
+                                <div class="absolute top-4 right-4 text-gray-300 hover:text-tech-red cursor-pointer transition">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="text-[10px] text-gray-500 uppercase font-bold tracking-wider">AUTOMOTIVE RIMS</span>
+                                <h3 class="text-white font-bold text-sm my-1 leading-snug group-hover:text-tech-red transition cursor-pointer">
+                                    Vô lăng thể thao Gaming Racing
+                                </h3>
+                                <div class="text-tech-yellow text-xs mb-2">
+                                    <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                                    <span class="text-gray-500 ml-1">(0)</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-tech-red font-bold text-lg">$18.00</span>
+                                    <span class="text-gray-600 text-xs line-through decoration-1">$20.00</span>
+                                    <span class="bg-tech-red text-white text-[10px] font-bold px-1.5 py-0.5 rounded">-10%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="group">
+                            <div class="relative bg-white rounded-xl overflow-hidden h-64 flex items-center justify-center p-6 mb-4">
+                                <img src="Images/2-2-600x600.webp" alt="Chrome Rim" class="max-h-full max-w-full object-contain group-hover:scale-110 transition duration-500">
+                                <div class="absolute top-4 right-4 text-gray-300 hover:text-tech-red cursor-pointer transition">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="text-[10px] text-gray-500 uppercase font-bold tracking-wider">CAR AUDIO SYSTEMS</span>
+                                <h3 class="text-white font-bold text-sm my-1 leading-snug group-hover:text-tech-red transition cursor-pointer">
+                                    Dorman Steel Wheel Compatible Honda
+                                </h3>
+                                <div class="text-tech-yellow text-xs mb-2">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                                    <span class="text-gray-500 ml-1">(4)</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-tech-red font-bold text-lg">$90.00</span>
+                                    <span class="text-gray-600 text-xs line-through decoration-1">$120.00</span>
+                                    <span class="bg-tech-red text-white text-[10px] font-bold px-1.5 py-0.5 rounded">-25%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-tech-bg border-t border-gray-800">
+        <div class="container mx-auto px-4">
+            
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-orbitron font-black text-white uppercase tracking-wider">
+                    FROM LATEST NEWS
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <div class="group cursor-pointer">
+                    <div class="rounded-2xl overflow-hidden mb-4 relative aspect-[4/3]">
+                        <img src="Images/2-700x424.webp" alt="News 1" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 left-4 bg-tech-red text-white text-[10px] font-bold px-3 py-1 rounded uppercase">
+                            25 Dec
+                        </div>
+                    </div>
+                    
+                    <div class="flex justify-between items-center text-[10px] text-gray-500 uppercase font-bold mb-2">
+                        <span class="hover:text-white transition">Batteries Power</span>
+                        <span class="flex items-center gap-1 hover:text-white transition"><i class="fa-regular fa-user"></i> By Admin</span>
+                    </div>
+
+                    <h3 class="text-white font-bold text-sm mb-3 leading-snug group-hover:text-tech-red transition line-clamp-2">
+                        Growing In a Recession: Maximize Sales In the Parts Department 2
+                    </h3>
+
+                    <p class="text-gray-500 text-xs leading-relaxed line-clamp-3">
+                        Duis commodo faucibus lectus, et accumsan quam egestas at. Praesent eros mi, condimentum sit amet felis quis, hendrerit...
+                    </p>
+                </div>
+
+                <div class="group cursor-pointer">
+                    <div class="rounded-2xl overflow-hidden mb-4 relative aspect-[4/3]">
+                        <img src="Images/6-700x424.webp" alt="News 2" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                         <div class="absolute top-4 left-4 bg-tech-red text-white text-[10px] font-bold px-3 py-1 rounded uppercase">
+                            22 Dec
+                        </div>
+                    </div>
+                    
+                    <div class="flex justify-between items-center text-[10px] text-gray-500 uppercase font-bold mb-2">
+                        <span class="hover:text-white transition">Batteries Power</span>
+                        <span class="flex items-center gap-1 hover:text-white transition"><i class="fa-regular fa-user"></i> By Admin</span>
+                    </div>
+
+                    <h3 class="text-white font-bold text-sm mb-3 leading-snug group-hover:text-tech-red transition line-clamp-2">
+                        Growing In a Recession: Maximize Sales In the Parts Department 6
+                    </h3>
+
+                    <p class="text-gray-500 text-xs leading-relaxed line-clamp-3">
+                        Duis commodo faucibus lectus, et accumsan quam egestas at. Praesent eros mi, condimentum sit amet felis quis, hendrerit...
+                    </p>
+                </div>
+
+                <div class="group cursor-pointer">
+                    <div class="rounded-2xl overflow-hidden mb-4 relative aspect-[4/3]">
+                        <img src="Images/12-1-700x424.webp" alt="News 3" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                         <div class="absolute top-4 left-4 bg-tech-red text-white text-[10px] font-bold px-3 py-1 rounded uppercase">
+                            20 Dec
+                        </div>
+                    </div>
+                    
+                    <div class="flex justify-between items-center text-[10px] text-gray-500 uppercase font-bold mb-2">
+                        <span class="hover:text-white transition">Batteries Power</span>
+                        <span class="flex items-center gap-1 hover:text-white transition"><i class="fa-regular fa-user"></i> By Admin</span>
+                    </div>
+
+                    <h3 class="text-white font-bold text-sm mb-3 leading-snug group-hover:text-tech-red transition line-clamp-2">
+                        Growing In a Recession: Maximize Sales In the Parts Department 12
+                    </h3>
+
+                    <p class="text-gray-500 text-xs leading-relaxed line-clamp-3">
+                        Duis commodo faucibus lectus, et accumsan quam egestas at. Praesent eros mi, condimentum sit amet felis quis, hendrerit...
+                    </p>
+                </div>
+
+                <div class="group cursor-pointer">
+                    <div class="rounded-2xl overflow-hidden mb-4 relative aspect-[4/3]">
+                        <img src="Images/10-1-700x424.webp" alt="News 4" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                         <div class="absolute top-4 left-4 bg-tech-red text-white text-[10px] font-bold px-3 py-1 rounded uppercase">
+                            18 Dec
+                        </div>
+                    </div>
+                    
+                    <div class="flex justify-between items-center text-[10px] text-gray-500 uppercase font-bold mb-2">
+                        <span class="hover:text-white transition">Batteries Power</span>
+                        <span class="flex items-center gap-1 hover:text-white transition"><i class="fa-regular fa-user"></i> By Admin</span>
+                    </div>
+
+                    <h3 class="text-white font-bold text-sm mb-3 leading-snug group-hover:text-tech-red transition line-clamp-2">
+                        Growing In a Recession: Maximize Sales In the Parts Department 9
+                    </h3>
+
+                    <p class="text-gray-500 text-xs leading-relaxed line-clamp-3">
+                        Duis commodo faucibus lectus, et accumsan quam egestas at. Praesent eros mi, condimentum sit amet felis quis, hendrerit...
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="py-12 bg-black border-t border-gray-800">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+            <div class="flex items-center mb-6 md:mb-0">
+                <div class="text-4xl text-white mr-4"><i class="fa-regular fa-envelope-open"></i></div>
+                <div>
+                    <h3 class="text-white font-bold uppercase">Subscribe & <span class="text-tech-red">Get 15% Discount</span></h3>
+                    <p class="text-gray-500 text-xs">Get 15% off your first purchase! Plus, be the first to know about sales new product launches and exclusive offers!</p>
+                </div>
+            </div>
+            <div class="flex w-full md:w-1/2">
+                <input type="email" placeholder="ENTER YOUR EMAIL" class="w-full p-3 rounded-l-full bg-white text-black outline-none text-sm pl-6">
+                <button class="bg-red-600 text-white font-bold px-8 rounded-r-full hover:bg-red-700 uppercase text-xs cursor-pointer">SUBSCRIBE</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-tech-bg pt-16 text-sm border-t border-gray-800 relative">
+        <div class="container mx-auto px-4">
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <a href="#" class="text-2xl font-orbitron font-black text-white italic tracking-wider block mb-6">
+                        <span class="text-tech-red">AUTOMIZE</span>
+                    </a>
+                    <p class="text-gray-500 mb-6 text-xs leading-relaxed">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <div class="flex gap-3">
+                        <a href="#" class="w-8 h-8 rounded-full bg-white text-black flex items-center justify-center hover:bg-tech-red hover:text-white transition duration-300">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-white text-black flex items-center justify-center hover:bg-tech-red hover:text-white transition duration-300">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-white text-black flex items-center justify-center hover:bg-tech-red hover:text-white transition duration-300">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-white text-black flex items-center justify-center hover:bg-tech-red hover:text-white transition duration-300">
+                            <i class="fa-brands fa-vimeo-v"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-white text-black flex items-center justify-center hover:bg-tech-red hover:text-white transition duration-300">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-tech-red font-bold uppercase mb-6 text-xs tracking-wider">HELP & SUPPORT</h4>
+                    <ul class="text-gray-400 space-y-3 text-xs font-medium">
+                        <li><a href="#" class="hover:text-white transition">Shipping Info</a></li>
+                        <li><a href="#" class="hover:text-white transition">Returns</a></li>
+                        <li><a href="#" class="hover:text-white transition">How To Order</a></li>
+                        <li><a href="#" class="hover:text-white transition">How To Track</a></li>
+                        <li><a href="#" class="hover:text-white transition">Size Guide</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-tech-red font-bold uppercase mb-6 text-xs tracking-wider">COMPANY INFO</h4>
+                    <ul class="text-gray-400 space-y-3 text-xs font-medium">
+                        <li><a href="#" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="#" class="hover:text-white transition">Our Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition">Careers</a></li>
+                        <li><a href="#" class="hover:text-white transition">Store Locations</a></li>
+                        <li><a href="#" class="hover:text-white transition">Testimonial</a></li>
+                    </ul>
+                </div>
+
+                 <div>
+                    <h4 class="text-tech-red font-bold uppercase mb-6 text-xs tracking-wider">CUSTOMER CARE</h4>
+                    <ul class="text-gray-400 space-y-3 text-xs font-medium">
+                        <li><a href="#" class="hover:text-white transition">FAQs</a></li>
+                        <li><a href="#" class="hover:text-white transition">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-white transition">Gift Card</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-b border-gray-800 bg-[#0e121a]">
+            <div class="container mx-auto px-4 py-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-white text-xs">
+                    
+                    <div class="flex items-center gap-4">
+                        <div class="text-2xl text-white"><i class="fa-solid fa-phone-volume"></i></div>
+                        <div>
+                            <span class="block font-bold">We're available by phone <span class="text-tech-red">+123-456-789</span></span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <div class="text-2xl text-white"><i class="fa-regular fa-envelope"></i></div>
+                        <div>
+                            <span class="block font-bold">Email: <span class="font-normal text-gray-400">info@example.com</span></span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <div class="text-2xl text-white"><i class="fa-regular fa-clock"></i></div>
+                        <div>
+                            <span class="block font-bold">Opening Hours: <span class="font-normal text-gray-400">Monday till Friday 10 to 6 EST</span></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="text-xs text-white font-medium">
+                Copyright © 2024 RisingBamboo. All Rights Reserved.
+            </div>
+            
+            <div class="flex items-center gap-2">
+                <i class="fa-brands fa-cc-visa text-3xl text-white hover:text-tech-red cursor-pointer transition"></i>
+                <i class="fa-brands fa-cc-paypal text-3xl text-white hover:text-tech-red cursor-pointer transition"></i>
+                <i class="fa-brands fa-cc-amex text-3xl text-white hover:text-tech-red cursor-pointer transition"></i>
+                <i class="fa-brands fa-cc-stripe text-3xl text-white hover:text-tech-red cursor-pointer transition"></i>
+            </div>
+        </div>
+
+        <a href="#" class="fixed bottom-8 right-8 bg-white text-tech-red w-10 h-10 rounded-full flex items-center justify-center shadow-lg hover:bg-tech-red hover:text-white transition duration-300 z-50 animate-bounce">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+    </footer>
+
+    <script src="file.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+/* --- KHUNG LOGO (BRAND BOX) --- */
+.brand-box {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #151A23; 
+    border: 1px solid #1f2937;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.brand-box:hover {
+    border-color: #4b5563;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+.brand-img {
+    max-height: 50px;
+    max-width: 80%;
+    object-fit: contain;
+    filter: grayscale(100%) opacity(0.5);
+    transition: all 0.3s ease;
+}
+
+.brand-box:hover .brand-img {
+    filter: grayscale(0%) opacity(1);
+    transform: scale(1.1);
+}
+
+/* --- COMPARISON SLIDER (Before/After) --- */
+#comparison-slider img {
+    user-select: none;
+    pointer-events: none; 
+}
+
+.slider-handle {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+    cursor: ew-resize; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.slider-handle::before {
+    content: "";
+    position: absolute;
+    background: #E31E24;
+    width: 2px;
+    height: 9999px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+/* --- ĐỒNG HỒ ĐẾM NGƯỢC --- */
+.timer-box {
+    background-color: #F4D03F; 
+    color: black;
+    font-weight: bold;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: 0.75rem;
+}
+
+/* --- ICON MÀU VÀNG --- */
+.icon-yellow {
+    filter: brightness(0) saturate(100%) invert(88%) sepia(51%) saturate(1637%) hue-rotate(325deg) brightness(103%) contrast(94%);
+}
+
+/* --- HIỆU ỨNG FADE IN CHO TABS --- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+}
